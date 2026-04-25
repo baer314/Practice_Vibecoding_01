@@ -32,6 +32,9 @@
                     <li><a href="#gallery">미리보기</a></li>
                     <li><a href="#adopt" class="btn btn-secondary"
                             style="padding: 10px 25px; border-radius: 50px;">구매하기</a></li>
+                    <li class="lang-switch"><a href="index.html"
+                            style="font-weight:700; color:var(--primary-color);">KR</a> <span
+                            style="color:var(--white);">|</span> <a href="index_en.html">EN</a></li>
                 </ul>
             </nav>
         </div>
@@ -129,14 +132,14 @@
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="hero.png" alt="아름다운 벚꽃">
+                    <img src="skura.png" alt="벚꽃과 오목눈이">
                     <div class="gallery-overlay">
                         <h3>따뜻한 시선</h3>
                         <p>호기심 가득한 눈망울</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="action.png" alt="활동하는 오목눈이">
+                    <img src="fly.png" alt="활동하는 오목눈이">
                     <div class="gallery-overlay">
                         <h3>작은 날갯짓</h3>
                         <p>에너지 넘치는 하루</p>
@@ -160,7 +163,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <svg class="logo-icon" viewBox="0 0 100 100" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="logo-icon" viewBox="0 0 100 100" width="36" height="36"
+                        xmlns="http://www.w3.org/2000/svg">
                         <g fill="currentColor">
                             <circle cx="40" cy="50" r="25" />
                             <path d="M 55 45 Q 85 35 95 25 Q 85 55 60 65 Z" />
@@ -184,7 +188,7 @@
         // Hero Image Slider
         const heroImages = document.querySelectorAll('.hero-bg');
         let currentImage = 0;
-        
+
         setInterval(() => {
             heroImages[currentImage].classList.remove('active');
             currentImage = (currentImage + 1) % heroImages.length;
